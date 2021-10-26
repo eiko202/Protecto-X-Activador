@@ -395,14 +395,13 @@ echo.
 echo                [8] Verificar el estado de activacion [vbs]
 echo                [9] Verificar el estado de activacion [wmic]
 echo                [S] Crear $OEM$ Folder
-echo                [R] Leer
 echo                [E] Activar [Modo Externo]
 echo           %line3%
 echo.
 if %winbuild% LSS 10586 (
 popd
 )
-choice /c 1234567890ERSX /n /m ">           Elija una opcion de menu, o presione 0 para salir: "
+choice /c 1234567890ESX /n /m ">           Elija una opcion de menu, o presione 0 para salir: "
 set _el=%errorlevel%
 if %_el%==14 if %winbuild% GEQ 10240 (if %SkipKMS38% EQU 0 (set SkipKMS38=1) else (set SkipKMS38=0))&goto :MainMenu
 if %_el%==13 (call :CreateOEM)&goto :MainMenu
