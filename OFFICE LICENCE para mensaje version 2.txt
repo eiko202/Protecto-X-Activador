@@ -1,0 +1,18 @@
+
+.............................<PASO 1>............................
+		(INGRESAR A LA RUTA:  Click-to-Run) Ingresar a CMD como administrador
+
+	cd "\Program Files\Common Files\microsoft shared\ClickToRun" 
+
+.............................<PASO 2>............................
+		(VOLVER A UNA COMPILACION MAS ANTIGUA)	
+	
+	 OfficeC2rclient.exe /update user updatetoversion=16.0.13801.20266
+
+.............................<PASO 3>............................
+		(ABRIR CUALQUIER PROGRAMA DE OFFICE Por Ej. WORD)
+	- Ya no debería aparecer el banner o mensaje de problema de licencia
+	- Deshabilitar/desactivar las actualizaciones.
+
+*****************************
+

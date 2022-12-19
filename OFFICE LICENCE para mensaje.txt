@@ -1,0 +1,36 @@
+*PASO 1: (VER ESTADO LICENCIAS) 
+
+(64bits) cscript "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" /dstatus
+(32bits) cscript "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" /dstatus
+------------------------------------------------------------------------------
+*PASO 2: (QUITAR LICENCIAS)
+
+(64bits) cscript "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" /unpkey:    
+(32bits) cscript "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" /unpkey:BWTH9
+-------------------------------------------------------------------------------
+*PASO 3: (SELECCIONAR LA RUTA DE OFFICE)
+
+cd /d %ProgramFiles%\Microsoft Office\Office16
+cd /d %ProgramFiles(x86)%\Microsoft Office\Office16
+------------------------------------------------------------
+*PASO 4 (RETAIL A VL)
+
+for /f %x in ('dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+-------------------------------------------------------------
+*PASO 5 (USO DE LA LICENCIA)
+
+cscript ospp.vbs /inpkey:W8W6K-3N7KK-PXB9H-8TD8W-BWTH9
+cscript ospp.vbs /sethst:kms.srv.crsoo.com
+cscript ospp.vbs /act
+
+
+######################################
+*SERIALES: 
+
+W8W6K-3N7KK-PXB9H-8TD8W-BWTH9
+VQ9DP-NVHPH-T9HJC-J9PDT-KTQRG
+KDNJ9-G2MPB-HWJB4-DC6C2-DDCWD
+NMMKJ-6RK4F-KMJVX-8D9MJ–6MWKP
+XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99
+NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP 
+#####################################
