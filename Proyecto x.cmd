@@ -484,7 +484,7 @@ call :Cfgbg %_cWht% "               [X] Saltar Windows KMS38        " %_cYel% "[
 ))
 echo                %line4%
 echo.
-echo                    Misceláneas:
+echo                    Complementos:
 echo.
 echo                [8] Comprobar estado de activacion {vbs}
 echo                [9] comprobar el estado de activacion {wmi}
