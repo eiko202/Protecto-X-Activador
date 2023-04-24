@@ -396,7 +396,7 @@ cls&goto :DoActivate
 cls
 mode con cols=80 lines=34
 color 07
-set "_title=KMS_VL_ALL_AIO %uivr%"
+set "_title=kms49 %uivr%"
 title %_title%
 set sub_next=0
 set sub_o365=0
@@ -617,10 +617,10 @@ color 8F&set "mode=External ^(%KMS_IP%^)"
 if %_AUR% EQU 0 (color 1F&set "mode=Manual") else (color 07&set "mode=Auto Renewal")
 )
 if %Unattend% EQU 0 (
-if %_Debug% EQU 0 (title %_title%) else (set "_title=KMS_VL_ALL_AIO %uivr% : %mode%"&title KMS_VL_ALL_AIO %uivr% : %mode%)
+if %_Debug% EQU 0 (title %_title%) else (set "_title=kms49 %uivr% : %mode%"&title kms49 %uivr% : %mode%)
 ) else (
 echo.
-echo Running KMS_VL_ALL_AIO %uivr%
+echo Running kms49 %uivr%
 )
 if %Silent% EQU 0 if %_Debug% EQU 0 (
 %_Nul3% %_psc% "&%_buf%"
@@ -1955,11 +1955,11 @@ echo Press any key to continue...
 pause >nul
 goto :eof
 )
-if not exist "!_oem!\$OEM$\$$\Setup\Scripts\KMS_VL_ALL_AIO.cmd" mkdir "!_oem!\$OEM$\$$\Setup\Scripts"
-copy /y "!_batf!" "!_oem!\$OEM$\$$\Setup\Scripts\KMS_VL_ALL_AIO.cmd" %_Nul3%
+if not exist "!_oem!\$OEM$\$$\Setup\Scripts\kms49.cmd" mkdir "!_oem!\$OEM$\$$\Setup\Scripts"
+copy /y "!_batf!" "!_oem!\$OEM$\$$\Setup\Scripts\kms49.cmd" %_Nul3%
 (
 echo @echo off
-echo call %%~dp0KMS_VL_ALL_AIO.cmd /s /a
+echo call %%~dp0kms49.cmd /s /a
 echo cd \
 echo ^(goto^) 2^>nul^&rd /s /q "%%~dp0"
 )>"!_oem!\$OEM$\$$\Setup\Scripts\setupcomplete.cmd"
@@ -1975,10 +1975,10 @@ goto :eof
 
 :CreateBIN
 cls
-if exist "!_oem!\KMS_VL_ALL_AIO-bin\*.dll" if exist "!_oem!\KMS_VL_ALL_AIO-bin\*.cab" (
+if exist "!_oem!\kms49-bin\*.dll" if exist "!_oem!\kms49-bin\*.cab" (
 echo.&echo %line3%&echo.
 echo Binaries Folder already exist...
-echo "!_oem!\KMS_VL_ALL_AIO-bin"
+echo "!_oem!\kms49-bin"
 echo.
 echo Manually remove it if you wish to create a fresh copy.
 echo.&echo %line3%&echo.
@@ -1986,8 +1986,8 @@ echo Press any key to continue...
 pause >nul
 goto :eof
 )
-if not exist "!_oem!\KMS_VL_ALL_AIO-bin\*.dll" mkdir "!_oem!\KMS_VL_ALL_AIO-bin"
-pushd "!_oem!\KMS_VL_ALL_AIO-bin"
+if not exist "!_oem!\kms49-bin\*.dll" mkdir "!_oem!\kms49-bin"
+pushd "!_oem!\kms49-bin"
 %_Nul3% rmdir /s /q .
 setlocal
 set "TMP=%SystemRoot%\Temp"
@@ -2002,7 +2002,7 @@ popd
 echo.&echo %line3%&echo.
 echo Binaries Folder Created...
 echo.
-echo "!_oem!\KMS_VL_ALL_AIO-bin"
+echo "!_oem!\kms49-bin"
 echo.&echo %line3%&echo.
 echo.
 echo Press any key to continue...
