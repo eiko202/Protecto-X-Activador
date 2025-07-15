@@ -1,4 +1,4 @@
 #EXTM3U
-#EXTVLCOPT:http-caching=90000
+#EXTVLCOPT:http-caching=30000
 #EXTINF:-1,Mega
 https://pantera1-100gb-cl-movistar.dps.live/mega/mega.smil/playlist.m3u8
