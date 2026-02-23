@@ -1,0 +1,32 @@
+{
+  "channels": [
+    {
+      "id": 1,
+      "name": "TVN",
+      "number": 2,
+      "url": "https://unlimited1-cl.dps.live/tvn/tvn.smil/playlist.m3u8",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/TVN_2021.svg/120px-TVN_2021.svg.png"
+    },
+    {
+      "id": 2,
+      "name": "Canal 13",
+      "number": 13,
+      "url": "https://rudo.video/live/c13",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Canal_13_Chile_logo_2022.svg/120px-Canal_13_Chile_logo_2022.svg.png"
+    },
+    {
+      "id": 3,
+      "name": "Mega",
+      "number": 9,
+      "url": "https://pantera1-100gb-cl-movistar.dps.live/mega/mega.smil/playlist.m3u8",
+      "logo": "hhttps://upload.wikimedia.org/wikipedia/commons/b/be/Meganoticias2019.png"
+    },
+    {
+      "id": 4,
+      "name": "Chilevisión",
+      "number": 11,
+      "url": "https://monitortv.vercel.app/Monitores/Senal/WEB/Se%C3%B1alCHV_IFRAME",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Chilevision_logo_2016.svg/120px-Chilevision_logo_2016.svg.png"
+    }
+  ]
+}
